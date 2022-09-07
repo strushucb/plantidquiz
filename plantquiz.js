@@ -101,7 +101,7 @@ class MagicEightBall extends React.Component {
   guess() {
     console.log("guess is called with "+this.state.userInput+" as the userInput");
     if (this.state.userInput !== '') {
-      let distance = levenshteinDistance(this.state.correctAnswer, this.state.userInput.replace("’","'"))
+      let distance = levenshteinDistance(this.state.correctAnswer, this.state.userInput.replace("’","'").replace("‘","'"));
       if (distance == 0){
         this.setState({response: "You're correct!"});
       } else {
