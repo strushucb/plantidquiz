@@ -15,7 +15,7 @@ const plants =
             {bn: "Gleditsia triacanthos 'Sunburst'", cn: "Sunburst Honey Locust"},
             {bn: "Liquidambar styraciflua", cn: "Liquidambar / American Sweet Gum"},
             {bn: "Liriodendron tulipifera", cn: "Tulip Tree"},
-            {bn:"Parthenocissus triscuspidata", cn:"Boston Ivy"},
+            {bn:"Parthenocissus tricuspidata", cn:"Boston Ivy"},
             {bn:"Platanus racemosa", cn:"California Sycamore"},
             {bn:"Quercus douglasii", cn:"Blue Oak"},
             {bn:"Quercus palustris", cn:"Pin Oak / Swamp Oak"},
