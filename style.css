@@ -9,7 +9,7 @@ body{
   align-items: center;
 }
 .question-container{
-  width: 300px;
+  width: 100%;
 }
   
 input {
@@ -33,6 +33,26 @@ button{
   margin: 10px 0;
   background: #ffc83d;
   color: black;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.collection-container{
+  margin: 0px;
+  text-align: left;
+  vertical-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: left;
+  align-items: left;
+}
+
+.checkbox, label{
+  padding: 0px 0px;
+  margin: 0px 0;
+  color: white;
   border: none;
   border-radius: 3px;
   cursor: pointer;

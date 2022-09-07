@@ -1,25 +1,36 @@
 const plants = 
-            [{bn:"Ulmus parvifolia", cn:"Chinese Elm"},
-              {bn:"Quercus palustris", cn:"Pin Oak / Swamp Oak"},
-              {bn:"Quercus douglasii", cn:"Blue Oak"},
-              {bn:"Platanus racemosa", cn:"California Sycamore"},
-              {bn:"Parthenocissus triscuspidata", cn:"Boston Ivy"},
-              {bn: "Liriodendron tulipifera", cn: "Tulip Tree"},
-              {bn: "Liquidambar styraciflua", cn: "Liquidambar / American Sweet Gum"},
-              {bn: "Gleditsia triacanthos 'Sunburst'", cn: "Sunburst Honey Locust"},
-              {bn: "Betula pendula", cn: "European White Birch"},
-              {bn: "Aesculus x carnea", cn: "Red Horsechestnut"},
-              {bn: "Koelreuteria paniculata", cn: "Golden Rain Tree"},
-              {bn: "Ginkgo biloba", cn: "Maidenhair Tree / Ginkgo Tree"},
-              {bn: "Fraxinus angustifolia 'Raywood'", cn: "Raywood Ash"},
-              {bn: "Corylus avellana 'Contorta'", cn: "Harry Lauder's Walking Stick"},
-              {bn: "Cercis occidentalis", cn: "Western Redbud"},
-              {bn: "Acer palmatum", cn: "Japanese Maple"},
-              {bn: "Pyrus calleryana cvs.", cn: "Flowering Pear / Callery Pear"},
-              {bn: "Pistacia chinensis", cn: "Chinese Pistache"},
-              {bn: "Morus alba 'Fruitless'", cn: "Fruitless Mulberry"},
-              {bn: "Lagerstroemia indica cvs.", cn: "Crape Myrtle"}
-              ];
+            [
+            {bn: "Acer palmatum", cn: "Japanese Maple"},  
+            {bn: "Cercis occidentalis", cn: "Western Redbud"},
+            {bn: "Corylus avellana 'Contorta'", cn: "Harry Lauder's Walking Stick"},
+            {bn: "Fraxinus angustifolia 'Raywood'", cn: "Raywood Ash"}, 
+            {bn: "Ginkgo biloba", cn: "Maidenhair Tree / Ginkgo Tree"},
+            {bn: "Koelreuteria paniculata", cn: "Golden Rain Tree"},
+            {bn: "Lagerstroemia indica cvs.", cn: "Crape Myrtle"},
+            {bn: "Morus alba 'Fruitless'", cn: "Fruitless Mulberry"},
+            {bn: "Pistacia chinensis", cn: "Chinese Pistache"},
+            {bn: "Pyrus calleryana cvs.", cn: "Flowering Pear / Callery Pear"},
+            {bn: "Aesculus x carnea", cn: "Red Horsechestnut"}, 
+            {bn: "Betula pendula", cn: "European White Birch"},
+            {bn: "Gleditsia triacanthos 'Sunburst'", cn: "Sunburst Honey Locust"},
+            {bn: "Liquidambar styraciflua", cn: "Liquidambar / American Sweet Gum"},
+            {bn: "Liriodendron tulipifera", cn: "Tulip Tree"},
+            {bn:"Parthenocissus triscuspidata", cn:"Boston Ivy"},
+            {bn:"Platanus racemosa", cn:"California Sycamore"},
+            {bn:"Quercus douglasii", cn:"Blue Oak"},
+            {bn:"Quercus palustris", cn:"Pin Oak / Swamp Oak"},
+            {bn:"Ulmus parvifolia", cn:"Chinese Elm"},
+            {bn:"Agapanthus praecox orientalis cvs.",cn:"Lily of the Nile"},
+            {bn:"Dodonaea viscosa 'Purpurea'",cn:"Purple Hopseed Bush"},
+            {bn:"Eucalyptus sideroxylon",cn:"Red Iron Bark Eucalyptus"},
+            {bn:"Fatsia japonica",cn:"Japanese Aralia"},
+            {bn:"Loropetalum chinense 'Razzleberri'",cn:"Razzleberri Fringe Flower"}, 
+            {bn:"Phormium hybrids 'Yellow Wave'",cn:"Yellow Wave Phormium / Yellow Wave New Zealand Flax"},
+            {bn:"Prunus ilicifolia ilicifolia",cn:"Hollyleaf Cherry"},
+            {bn:"Rhus lancea",cn:"African Sumac"},
+            {bn:"Rosa spp. 'White Flower Carpet'",cn:"White Carpet Rose"},
+            {bn:"Salvia leucantha cvs.",cn:"Mexican Bush Sage / Velvet Sage"}
+            ];
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
@@ -65,33 +76,49 @@ class MagicEightBall extends React.Component {
   constructor(props) {
     super(props);
     console.log("At top of constructor");
-    this.plantList = this.getrandomplants();
+    this.plantList = this.getrandomplants(true,true,true);
     console.log(this.plantList)
     this.state = {
       userInput: '',
       plantDex: 0,
-      currentPlant: plants[this.plantList[0]].cn,
-      correctAnswer: plants[this.plantList[0]].bn,
-      response: "" 
+      plantList: this.plantList,
+      currentPlant: plants[this.plantList[0]-1].cn,
+      correctAnswer: plants[this.plantList[0]-1].bn,
+      response: "",
+      collection1: true,
+      collection2: true,
+      collection3: true
     }
     this.guess = this.guess.bind(this);
     this.newplant = this.newplant.bind(this);
     this.handleChange = this.handleChange.bind(this);
+        this.handleBox1 = this.handleBox1.bind(this);
+            this.handleBox2 = this.handleBox2.bind(this);
+                this.handleBox3 = this.handleBox3.bind(this);
     this.handleKeypress = this.handleKeypress.bind(this);
     console.log("Made it to bottom of constructor");
   }
 
-  getrandomplants() {
-    let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+  getrandomplants(col1, col2, col3) {
+    let array = []
+    if(col1){
+      array.push(1,2,3,4,5,6,7,8,9,10)
+    }
+    if(col2){
+      array.push(11,12,13,14,15,16,17,18,19,20)
+    }
+    if(col3){
+      array.push(21,22,23,24,25,26,27,28,29,30)
+    }
     return shuffle(array);
   }
 
   newplant() {
-    let nextDex = (this.state.plantDex + 1 < this.plantList.length) ? this.state.plantDex + 1 : 0;
+    let nextDex = (this.state.plantDex + 1 < this.state.plantList.length) ? this.state.plantDex + 1 : 0;
     this.setState({
       plantDex: nextDex,
-      currentPlant: plants[this.plantList[nextDex]].cn,
-      correctAnswer: plants[this.plantList[nextDex]].bn,  
+      currentPlant: plants[this.state.plantList[nextDex]-1].cn,
+      correctAnswer: plants[this.state.plantList[nextDex]-1].bn,  
       userInput: '',
       response: ''
     });
@@ -113,6 +140,48 @@ class MagicEightBall extends React.Component {
   handleChange(event) {
     this.setState({
       userInput: event.target.value
+    });
+  }
+
+  handleBox1(event) {
+    if(!this.state.collection2 && !this.state.collection3) return;
+    let newplantlist = this.getrandomplants(!this.state.collection1,this.state.collection2,this.state.collection3);
+    this.setState({
+      userInput: '',
+      plantDex: 0,
+      plantList: newplantlist,
+      currentPlant: plants[newplantlist[0]-1].cn,
+      correctAnswer: plants[newplantlist[0]-1].bn,
+      response: "",
+      collection1: !this.state.collection1
+    });
+  }
+
+  handleBox2(event) {
+    if(!this.state.collection1 && !this.state.collection3) return;
+    let newplantlist = this.getrandomplants(this.state.collection1,!this.state.collection2,this.state.collection3);
+    this.setState({
+      userInput: '',
+      plantDex: 0,
+      plantList: newplantlist,
+      currentPlant: plants[newplantlist[0]-1].cn,
+      correctAnswer: plants[newplantlist[0]-1].bn,
+      response: "",
+      collection2: !this.state.collection2
+    });
+  }
+
+  handleBox3(event) {
+    if(!this.state.collection1 && !this.state.collection2) return;
+    let newplantlist = this.getrandomplants(this.state.collection1,this.state.collection2,!this.state.collection3);
+    this.setState({
+      userInput: '',
+      plantDex: 0,
+      plantList: newplantlist,
+      currentPlant: plants[newplantlist[0]-1].cn,
+      correctAnswer: plants[newplantlist[0]-1].bn,
+      response: "",
+      collection3: !this.state.collection3
     });
   }
 
@@ -153,10 +222,21 @@ class MagicEightBall extends React.Component {
               </div>
           </div>
           <button onClick={this.newplant}>
-            Next Plant from Collection 1 or 2!
+            Next Plant!
           </button>
-          <div className="ball-shadow"></div>
+        <div className="collection-container">
+              <label htmlFor="collection1">
+                 <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Include Collection 1 
+              </label>
+              <label htmlFor="collection2">
+                 <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> Include Collection 2 
+              </label>
+              <label htmlFor="collection3">
+                 <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Include Collection 3 
+              </label>
+          </div>
         </div>
+
       </div>
     );
   }
