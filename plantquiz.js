@@ -120,7 +120,7 @@ class MagicEightBall extends React.Component {
       currentPlant: plants[this.state.plantList[nextDex]-1].cn,
       correctAnswer: plants[this.state.plantList[nextDex]-1].bn,  
       userInput: '',
-      response: ''
+      response: ""
     });
   }
 
@@ -138,6 +138,7 @@ class MagicEightBall extends React.Component {
   }
   
   handleChange(event) {
+    console.log("In handle change");
     this.setState({
       userInput: event.target.value
     });
@@ -186,7 +187,10 @@ class MagicEightBall extends React.Component {
   }
 
   handleKeypress(event){
-    if (event.key === "Enter") {      
+    if (event.key === "Enter" && this.state.response === "You're correct!") {
+      //console.log("Do a new plant!");      
+      this.newplant();
+    } else if (event.key === "Enter") {      
       this.guess();
     } 
   }
