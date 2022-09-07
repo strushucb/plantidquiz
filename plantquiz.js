@@ -130,7 +130,7 @@ class MagicEightBall extends React.Component {
     if (this.state.userInput !== '') {
       let distance = levenshteinDistance(this.state.correctAnswer, this.state.userInput.replace("’","'").replace("‘","'"));
       if (distance == 0){
-        this.setState({response: "You're correct!"});
+        this.setState({response: "You're correct! Press ENTER or 'Next Plant'!"});
       } else {
         this.setState({response: "You're "+distance+" letters away from being correct."});
       }
@@ -187,7 +187,7 @@ class MagicEightBall extends React.Component {
   }
 
   handleKeypress(event){
-    if (event.key === "Enter" && this.state.response === "You're correct!") {
+    if (event.key === "Enter" && this.state.response === "You're correct! Press ENTER or 'Next Plant'!") {
       //console.log("Do a new plant!");      
       this.newplant();
     } else if (event.key === "Enter") {      
