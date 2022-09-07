@@ -209,8 +209,6 @@ class MagicEightBall extends React.Component {
           <button onClick={this.guess}>
             Submit Answer!
           </button>
-        </div>
-        
         <div className="ball-container">
           <div className="ball-black-outer">
               <div>
@@ -236,6 +234,9 @@ class MagicEightBall extends React.Component {
               </label>
           </div>
         </div>
+        </div>
+        
+
 
       </div>
     );
