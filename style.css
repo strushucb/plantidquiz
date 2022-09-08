@@ -4,14 +4,13 @@ html, body{
 
 body{
   background: #1111f1;
-  display: flex;
+
   justify-content: center;
   align-items: center;
 }
 .question-container{
   width: 500px;
   text-align: center;
-  vertical-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +31,14 @@ p.prompt-label{
   font: 20px bolder Arial, sans-serif;
   color: #ffc83d;
   border: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 66%;
+  height: auto;
 }
 
 button{

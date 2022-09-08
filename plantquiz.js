@@ -1,35 +1,35 @@
 const plants = 
             [
-            {bn: "Acer palmatum", cn: "Japanese Maple"},  
-            {bn: "Cercis occidentalis", cn: "Western Redbud"},
-            {bn: "Corylus avellana 'Contorta'", cn: "Harry Lauder's Walking Stick"},
-            {bn: "Fraxinus angustifolia 'Raywood'", cn: "Raywood Ash"}, 
-            {bn: "Ginkgo biloba", cn: "Maidenhair Tree / Ginkgo Tree"},
-            {bn: "Koelreuteria paniculata", cn: "Golden Rain Tree"},
-            {bn: "Lagerstroemia indica cvs.", cn: "Crape Myrtle"},
-            {bn: "Morus alba 'Fruitless'", cn: "Fruitless Mulberry"},
-            {bn: "Pistacia chinensis", cn: "Chinese Pistache"},
-            {bn: "Pyrus calleryana cvs.", cn: "Flowering Pear / Callery Pear"},
-            {bn: "Aesculus x carnea", cn: "Red Horsechestnut"}, 
-            {bn: "Betula pendula", cn: "European White Birch"},
-            {bn: "Gleditsia triacanthos 'Sunburst'", cn: "Sunburst Honey Locust"},
-            {bn: "Liquidambar styraciflua", cn: "Liquidambar / American Sweet Gum"},
-            {bn: "Liriodendron tulipifera", cn: "Tulip Tree"},
-            {bn:"Parthenocissus tricuspidata", cn:"Boston Ivy"},
-            {bn:"Platanus racemosa", cn:"California Sycamore"},
-            {bn:"Quercus douglasii", cn:"Blue Oak"},
-            {bn:"Quercus palustris", cn:"Pin Oak / Swamp Oak"},
-            {bn:"Ulmus parvifolia", cn:"Chinese Elm"},
-            {bn:"Agapanthus praecox orientalis cvs.",cn:"Lily of the Nile"},
-            {bn:"Dodonaea viscosa 'Purpurea'",cn:"Purple Hopseed Bush"},
-            {bn:"Eucalyptus sideroxylon",cn:"Red Iron Bark Eucalyptus"},
-            {bn:"Fatsia japonica",cn:"Japanese Aralia"},
-            {bn:"Loropetalum chinense 'Razzleberri'",cn:"Razzleberri Fringe Flower"}, 
-            {bn:"Phormium hybrids 'Yellow Wave'",cn:"Yellow Wave Phormium / Yellow Wave New Zealand Flax"},
-            {bn:"Prunus ilicifolia ilicifolia",cn:"Hollyleaf Cherry"},
-            {bn:"Rhus lancea",cn:"African Sumac"},
-            {bn:"Rosa spp. 'White Flower Carpet'",cn:"White Carpet Rose"},
-            {bn:"Salvia leucantha cvs.",cn:"Mexican Bush Sage / Velvet Sage"}
+            {bn: "Acer palmatum", cn: "Japanese Maple", img: "001.jpeg"},  
+            {bn: "Cercis occidentalis", cn: "Western Redbud", img:"002.jpeg"},
+            {bn: "Corylus avellana 'Contorta'", cn: "Harry Lauder's Walking Stick", img:"003.jpeg"},
+            {bn: "Fraxinus angustifolia 'Raywood'", cn: "Raywood Ash", img:"004.jpeg"}, 
+            {bn: "Ginkgo biloba", cn: "Maidenhair Tree / Ginkgo Tree", img:"005.jpeg"},
+            {bn: "Koelreuteria paniculata", cn: "Golden Rain Tree", img:"006.jpeg"},
+            {bn: "Lagerstroemia indica cvs.", cn: "Crape Myrtle", img:"007.jpeg"},
+            {bn: "Morus alba 'Fruitless'", cn: "Fruitless Mulberry", img:"008.jpeg"},
+            {bn: "Pistacia chinensis", cn: "Chinese Pistache", img:"009.jpeg"},
+            {bn: "Pyrus calleryana cvs.", cn: "Flowering Pear / Callery Pear", img:"010.jpeg"},
+            {bn: "Aesculus x carnea", cn: "Red Horsechestnut", img:"011.jpeg"}, 
+            {bn: "Betula pendula", cn: "European White Birch", img:"012.jpeg"},
+            {bn: "Gleditsia triacanthos 'Sunburst'", cn: "Sunburst Honey Locust", img:"013.jpeg"},
+            {bn: "Liquidambar styraciflua", cn: "Liquidambar / American Sweet Gum", img:"014.jpeg"},
+            {bn: "Liriodendron tulipifera", cn: "Tulip Tree", img:"015.jpeg"},
+            {bn:"Parthenocissus tricuspidata", cn:"Boston Ivy", img:"016.jpeg"},
+            {bn:"Platanus racemosa", cn:"California Sycamore", img:"017.jpeg"},
+            {bn:"Quercus douglasii", cn:"Blue Oak", img:"018.jpeg"},
+            {bn:"Quercus palustris", cn:"Pin Oak / Swamp Oak", img:"019.jpeg"},
+            {bn:"Ulmus parvifolia", cn:"Chinese Elm", img:"020.jpeg"},
+            {bn:"Agapanthus praecox orientalis cvs.",cn:"Lily of the Nile", img:"021.jpeg"},
+            {bn:"Dodonaea viscosa 'Purpurea'",cn:"Purple Hopseed Bush", img:"022.jpeg"},
+            {bn:"Eucalyptus sideroxylon",cn:"Red Iron Bark Eucalyptus", img:"023.jpeg"},
+            {bn:"Fatsia japonica",cn:"Japanese Aralia", img:"024.jpeg"},
+            {bn:"Loropetalum chinense 'Razzleberri'",cn:"Razzleberri Fringe Flower", img:"025.jpeg"}, 
+            {bn:"Phormium hybrids 'Yellow Wave'",cn:"Yellow Wave Phormium / Yellow Wave New Zealand Flax", img:"026.jpeg"},
+            {bn:"Prunus ilicifolia ilicifolia",cn:"Hollyleaf Cherry", img:"027.jpeg"},
+            {bn:"Rhus lancea",cn:"African Sumac", img:"028.jpeg"},
+            {bn:"Rosa spp. 'White Flower Carpet'",cn:"White Carpet Rose", img:"029.jpeg"},
+            {bn:"Salvia leucantha cvs.",cn:"Mexican Bush Sage / Velvet Sage", img:"030.jpeg"}
             ];
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
@@ -87,11 +87,13 @@ class MagicEightBall extends React.Component {
       response: "",
       collection1: true,
       collection2: true,
-      collection3: true
+      collection3: true,
+      hints: true
     }
     this.guess = this.guess.bind(this);
     this.newplant = this.newplant.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleHints = this.handleHints.bind(this);
         this.handleBox1 = this.handleBox1.bind(this);
             this.handleBox2 = this.handleBox2.bind(this);
                 this.handleBox3 = this.handleBox3.bind(this);
@@ -142,6 +144,12 @@ class MagicEightBall extends React.Component {
     this.setState({
       userInput: event.target.value
     });
+  }
+
+  handleHints(event){
+    this.setState({
+      hints: !this.state.hints
+    }); 
   }
 
   handleBox1(event) {
@@ -203,7 +211,14 @@ class MagicEightBall extends React.Component {
     return (
       <div>
         <div className="question-container">
-          <p className="prompt-label">What is the botanical name for {this.state.currentPlant}?</p>
+          <p className="prompt-label">What is the botanical name for this plant?</p>
+          <img src={"images/"+plants[this.state.plantList[this.state.plantDex]-1].img+""}/>
+          { (this.state.hints) ?
+              <p className="prompt-label">Hint: its common name is {this.state.currentPlant}.</p>
+              :
+              <p> ... </p>
+          }
+
           <input
             type="text"
             value={this.state.userInput}
@@ -211,7 +226,7 @@ class MagicEightBall extends React.Component {
             onKeyPress={this.handleKeypress}
             />
           <button onClick={this.guess}>
-            Submit Answer!
+            Submit Answer (or press ENTER)!
           </button>
         <div className="ball-container">
           <div className="ball-black-outer">
@@ -235,6 +250,11 @@ class MagicEightBall extends React.Component {
               </label>
               <label htmlFor="collection3">
                  <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Include Collection 3 
+              </label>
+          </div>
+          <div>
+              <label htmlFor="hints">
+                 <input className="checkbox" type="checkbox" id="hints" name="hints" checked={this.state.hints} onChange={this.handleHints}/> Show Common Name 
               </label>
           </div>
         </div>
