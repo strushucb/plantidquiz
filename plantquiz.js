@@ -29,7 +29,17 @@ const plants =
             {bn:"Prunus ilicifolia ilicifolia",cn:"Hollyleaf Cherry", img:"027.jpeg", img2: "027a.jpeg"},
             {bn:"Rhus lancea",cn:"African Sumac", img:"028.jpeg", img2: "028a.jpeg"},
             {bn:"Rosa spp. 'White Flower Carpet'",cn:"White Carpet Rose", img:"029.jpeg", img2: "029a.jpeg"},
-            {bn:"Salvia leucantha cvs.",cn:"Mexican Bush Sage / Velvet Sage", img:"030.jpeg", img2: "030a.jpeg"}
+            {bn:"Salvia leucantha cvs.",cn:"Mexican Bush Sage / Velvet Sage", img:"030.jpeg", img2: "030a.jpeg"},
+            {bn:"Abelia x grandiflora cvs.",cn:"Glossy Abelia", img:"031.jpeg", img2: "031b.jpeg"},
+            {bn:"Dietes bi-color",cn:"Yellow Fortnight Lily", img:"032.jpeg", img2: "032b.jpeg"},
+            {bn:"Dietes iridioides",cn:"Fortnight Lily", img:"033.jpeg", img2: "033b.jpeg"},
+            {bn:"Lantana montevidensis cvs.",cn:"Trailing Lantana", img:"034.jpeg", img2: "034b.jpeg"},
+            {bn:"Lavandula angustifolia cvs.",cn:"English Lavender", img:"035.jpeg", img2: "035b.jpeg"}, 
+            {bn:"Lavatera maritima",cn:"Maritime Lavatera", img:"036.jpeg", img2: "036b.jpeg"},
+            {bn:"Ligustrum japonicum 'Texanum'",cn:"Texas Privet", img:"037.jpeg", img2: "037b.jpeg"},
+            {bn:"Myoporum parvifolium cvs.",cn:"Prostrate Myoporum", img:"038.jpeg", img2: "038b.jpeg"},
+            {bn:"Nandina domestica cvs.",cn:"Heavenly Bamboo", img:"039.jpeg", img2: "039b.jpeg"},
+            {bn:"Olea europaea cvs.",cn:"Olive", img:"040.jpeg", img2: "040b.jpeg"}
             ];
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
@@ -105,13 +115,13 @@ class MagicEightBall extends React.Component {
   getrandomplants(col1, col2, col3) {
     let array = []
     if(col1){
-      array.push(1,2,3,4,5,6,7,8,9,10)
+      array.push(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
     }
     if(col2){
-      array.push(11,12,13,14,15,16,17,18,19,20)
+      array.push(21,22,23,24,25,26,27,28,29,30)
     }
     if(col3){
-      array.push(21,22,23,24,25,26,27,28,29,30)
+      array.push(31,32,33,34,35,36,37,38,39,40)
     }
     return shuffle(array);
   }
@@ -250,13 +260,13 @@ class MagicEightBall extends React.Component {
 
         <div className="collection-container">
               <label htmlFor="collection1">
-                 <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Include Collection 1 
+                 <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Oldies (1-20) 
               </label>
               <label htmlFor="collection2">
-                 <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> Include Collection 2 
+                 <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> 2 Weeks Ago (21-30) 
               </label>
               <label htmlFor="collection3">
-                 <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Include Collection 3 
+                 <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Last Week (31-40) 
               </label>
           </div>
           <div>
