@@ -28,7 +28,7 @@ const plants =
             {bn:"Phormium hybrids 'Yellow Wave'",cn:"Yellow Wave Phormium / Yellow Wave New Zealand Flax", img:"026.jpeg", gimgs: ["026%20(1)","026%20(2)","026%20(3)","026%20(4)","026%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.4c6hs833mw03"},  
             {bn:"Prunus ilicifolia ilicifolia",cn:"Hollyleaf Cherry", img:"027.jpeg", gimgs: ["027%20(1)","027%20(2)","027%20(3)","027%20(4)","027%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.e7yktskvdg"},  
             {bn:"Rhus lancea",cn:"African Sumac", img:"028.jpeg", gimgs: ["028%20(1)","028%20(2)","028%20(3)","028%20(4)","028%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.q3n96j6u5mw"},  
-            {bn:"Rosa spp. 'White Flower Carpet'",cn:"White Carpet Rose", img:"029.jpeg", gimgs: ["029%20(1)","029%20(2)","029%20(3)","029%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.6a0psynfptee"},  
+            {bn:"Rosa hybrids 'White Flower Carpet'",cn:"White Carpet Rose", img:"029.jpeg", gimgs: ["029%20(1)","029%20(2)","029%20(3)","029%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.6a0psynfptee"},  
             {bn:"Salvia leucantha cvs.",cn:"Mexican Bush Sage / Velvet Sage", img:"030.jpeg", gimgs: ["030%20(1)","030%20(2)","030%20(3)","030%20(4)","030%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.833i6i3n4e5g"},  
             {bn:"Abelia x grandiflora cvs.",cn:"Glossy Abelia", img:"031.jpeg", gimgs: ["031b"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.oog0h9wtevv9"},  
             {bn:"Dietes bi-color",cn:"Yellow Fortnight Lily", img:"032.jpeg", gimgs: ["032%20(1)","032%20(2)","032%20(3)","032%20(4)","032%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.7i6n7jcsnjoj"},  
@@ -85,9 +85,9 @@ class MagicEightBall extends React.Component {
   
   constructor(props) {
     super(props);
-    console.log("At top of constructor");
+    //console.log("At top of constructor");
     this.plantList = this.getrandomplants(true,true,true);
-    console.log(this.plantList)
+    //console.log(this.plantList)
     this.state = {
       userInput: '',
       plantDex: 0,
@@ -109,7 +109,7 @@ class MagicEightBall extends React.Component {
             this.handleBox2 = this.handleBox2.bind(this);
                 this.handleBox3 = this.handleBox3.bind(this);
     this.handleKeypress = this.handleKeypress.bind(this);
-    console.log("Made it to bottom of constructor");
+    //console.log("Made it to bottom of constructor");
   }
 
   getrandomplants(col1, col2, col3) {
@@ -139,19 +139,19 @@ class MagicEightBall extends React.Component {
 
 
   guess() {
-    console.log("guess is called with "+this.state.userInput+" as the userInput");
+    //console.log("guess is called with "+this.state.userInput+" as the userInput");
     if (this.state.userInput !== '') {
       let distance = levenshteinDistance(this.state.correctAnswer, this.state.userInput.replace("’","'").replace("‘","'"));
       if (distance == 0){
         this.setState({response: "You're correct! Press ENTER or 'Next Plant'!", streak: this.state.streak + 1});
       } else {
-        this.setState({response: "You're "+distance+" letters away from being correct.",  streak: 0});
+        this.setState({response: "You're "+distance+" characters away from being correct.",  streak: 0});
       }
     }
   }
   
   handleChange(event) {
-    console.log("In handle change");
+    //console.log("In handle change");
     this.setState({
       userInput: event.target.value
     });
@@ -216,7 +216,7 @@ class MagicEightBall extends React.Component {
   
   render() {
 
-    console.log("Trying to render!");
+    //console.log("Trying to render!");
     const answer = this.state.response;
     
     return (
