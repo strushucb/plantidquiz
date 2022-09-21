@@ -3,7 +3,7 @@ const plants =
             {bn: "Acer palmatum", cn: "Japanese Maple", img: "001.jpeg", gimgs: ["001a","001b","001c","001d","001e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.sijcv6asnk6s"},  
             {bn: "Cercis occidentalis", cn: "Western Redbud", img:"002.jpeg", gimgs: ["002a","002b","002c","002d","002e","002f"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.7gmkqlasi0ru"},
             {bn: "Corylus avellana 'Contorta'", cn: "Harry Lauder's Walking Stick", img:"003.jpeg", gimgs: ["003a"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.2xhs6bovfn47"},  
-            {bn: "Fraxinus angustifolia 'Raywood'", cn: "Raywood Ash", img:"004.jpeg", gimgs: ["004a","004b","004c","004d","004e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.9t0jl4btm83y"},  
+            {bn: "Fraxinus angustifolia 'Raywood'", cn: "Raywood Ash", img:"004.jpeg", gimgs: ["004f"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.9t0jl4btm83y"},  
             {bn: "Ginkgo biloba", cn: "Maidenhair Tree / Ginkgo Tree", img:"005.jpeg", gimgs: ["005a","005b","005c","005d","005e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.yc7uni4uxrim"},  
             {bn: "Koelreuteria paniculata", cn: "Golden Rain Tree", img:"006.jpeg", gimgs: ["006a","006b","006c","006d","006e","006f"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.bcowhhsdt5ij"},  
             {bn: "Lagerstroemia indica cvs.", cn: "Crape Myrtle", img:"007.jpeg", gimgs: ["007a","007b","007c","007d","007e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.tip0txol5qed"},  
