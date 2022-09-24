@@ -2,13 +2,13 @@ const plants =
             [
             {bn: "Acer palmatum", cn: "Japanese Maple", img: "001.jpeg", gimgs: ["001a","001b","001c","001d","001e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.sijcv6asnk6s"},  
             {bn: "Cercis occidentalis", cn: "Western Redbud", img:"002.jpeg", gimgs: ["002a","002b","002c","002d","002e","002f"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.7gmkqlasi0ru"},
-            {bn: "Corylus avellana 'Contorta'", cn: "Harry Lauder's Walking Stick", img:"003.jpeg", gimgs: ["003a"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.2xhs6bovfn47"},  
+            {bn: "Corylus avellana 'Contorta'", cn: "Harry Lauder's Walking Stick", img:"003.jpeg", gimgs: ["003%20(1)","003%20(2)","003%20(3)","003%20(4)","003%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.2xhs6bovfn47"},  
             {bn: "Fraxinus angustifolia 'Raywood'", cn: "Raywood Ash", img:"004.jpeg", gimgs: ["004f"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.9t0jl4btm83y"},  
             {bn: "Ginkgo biloba", cn: "Maidenhair Tree / Ginkgo Tree", img:"005.jpeg", gimgs: ["005a","005b","005c","005d","005e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.yc7uni4uxrim"},  
             {bn: "Koelreuteria paniculata", cn: "Golden Rain Tree", img:"006.jpeg", gimgs: ["006a","006b","006c","006d","006e","006f"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.bcowhhsdt5ij"},  
             {bn: "Lagerstroemia indica cvs.", cn: "Crape Myrtle", img:"007.jpeg", gimgs: ["007a","007b","007c","007d","007e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.tip0txol5qed"},  
             {bn: "Morus alba 'Fruitless'", cn: "Fruitless Mulberry", img:"008.jpeg", gimgs: ["008a","008b","008c","008d","008e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.c6l2uivy50cx"},  
-            {bn: "Pistacia chinensis", cn: "Chinese Pistache", img:"009.jpeg", gimgs: ["009a"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.6rqjrvoonbex"},  
+            {bn: "Pistacia chinensis", cn: "Chinese Pistache", img:"009.jpeg", gimgs: ["009%20(1)","009%20(2)","009%20(3)","009%20(4)","009%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.6rqjrvoonbex"},  
             {bn: "Pyrus calleryana cvs.", cn: "Flowering Pear / Callery Pear", img:"010.jpeg", gimgs: ["010a","010b","010c","010d","010e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.o0p19z64p8wd"},  
             {bn: "Aesculus x carnea", cn: "Red Horsechestnut", img:"011.jpeg", gimgs: ["011a","011b","011c","011d","011e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.5epmd9704uhd"},  
             {bn: "Betula pendula", cn: "European White Birch", img:"012.jpeg", gimgs: ["012a","012b","012c","012d","012e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.eax22uexpzxh"},  
@@ -17,7 +17,7 @@ const plants =
             {bn: "Liriodendron tulipifera", cn: "Tulip Tree", img:"015.jpeg", gimgs: ["015a","015b","015c","015d","015e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.1ahoiqwudgv7"},  
             {bn:"Parthenocissus tricuspidata", cn:"Boston Ivy", img:"016.jpeg", gimgs: ["016%20(1)","016%20(2)","016%20(3)","016%20(4)","016%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.qxa16d1xdd01"},  
             {bn:"Platanus racemosa", cn:"California Sycamore", img:"017.jpeg", gimgs: ["017%20(1)","017%20(2)","017%20(3)","017%20(4)","017%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.1seir63hwmm8"},  
-            {bn:"Quercus douglasii", cn:"Blue Oak", img:"018.jpeg", gimgs: ["018a"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.4wl8r79wdl10"},  
+            {bn:"Quercus douglasii", cn:"Blue Oak", img:"018.jpeg", gimgs: ["018%20(1)","018%20(2)","018%20(3)","018%20(4)","018%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.4wl8r79wdl10"},  
             {bn:"Quercus palustris", cn:"Pin Oak / Swamp Oak", img:"019.jpeg", gimgs: ["019%20(1)","019%20(2)","019%20(3)","019%20(4)","019%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.1lssoc7az6a"},  
             {bn:"Ulmus parvifolia", cn:"Chinese Elm", img:"020.jpeg", gimgs: ["020%20(1)","020%20(2)","020%20(3)","020%20(4)","020%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.b3b03o4kosnq"},  
             {bn:"Agapanthus praecox orientalis cvs.",cn:"Lily of the Nile", img:"021.jpeg", gimgs: ["021%20(1)","021%20(2)","021%20(3)","021%20(4)","021%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.dmq7qec9ypy0"},  
@@ -39,7 +39,17 @@ const plants =
             {bn:"Ligustrum japonicum 'Texanum'",cn:"Texas Privet", img:"037.jpeg", gimgs: ["037%20(1)","037%20(2)","037%20(3)","037%20(4)","037%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.2wdbs58m60cd"},  
             {bn:"Myoporum parvifolium cvs.",cn:"Prostrate Myoporum", img:"038.jpeg", gimgs: ["038b"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.hkmjkuh66zc5"},  
             {bn:"Nandina domestica cvs.",cn:"Heavenly Bamboo", img:"039.jpeg", gimgs: ["039%20(1)","039%20(2)","039%20(3)","039%20(4)","039%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.bcb49h77k9sa"},  
-            {bn:"Olea europaea cvs.",cn:"Olive", img:"040.jpeg", gimgs: ["040%20(1)","040%20(2)","040%20(3)","040%20(4)","040%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.dvxkfkypqjse"}
+            {bn:"Olea europaea cvs.",cn:"Olive", img:"040.jpeg", gimgs: ["040%20(1)","040%20(2)","040%20(3)","040%20(4)","040%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.dvxkfkypqjse"},
+            {bn:"Achillea millefolium cvs.",cn:"Yarrow", img:"041.jpeg", gimgs: ["041%20(1)","041%20(2)","041%20(3)","041%20(4)","041%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.rqltzfhxun58"},
+            {bn:"Anemone x hybrida",cn:"Japanese Anemone", img:"042.jpeg", gimgs: ["042%20(1)","042%20(2)","042%20(3)","042%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.asy4i8vqvv4j"},
+            {bn:"Chondropetalum elephantium",cn:"Cape Rush", img:"043.jpeg", gimgs: ["043%20(1)","043%20(2)","043%20(3)","043%20(4)","043%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.aa5gkwl0wf34"},
+            {bn:"Leymus arenarius 'Blue Dune'",cn:"Blue Dune Lyme Grass", img:"044.jpeg", gimgs: ["044%20(1)","044%20(2)","044%20(3)","044%20(4)","044%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.4183mij3emoj"},
+            {bn:"Lomandra longifolia 'Platinum Beauty'",cn:"Platinum Beauty Mat Rush", img:"045.jpeg", gimgs: ["045%20(1)","045%20(2)","045%20(3)","045%20(4)","045%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.mlxes7yy8bqa"},
+            {bn:"Salvia yangii",cn:"Russian Sage", img:"046.jpeg", gimgs: ["046%20(1)","046%20(2)","046%20(3)","046%20(4)","046%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.tx23m8x3p33m"},
+            {bn:"Pyracantha coccinea 'Kasan'",cn:"Firethorn", img:"047.jpeg", gimgs: ["047%20(1)","047%20(2)","047%20(3)","047%20(4)","047%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.nzeowsxmnqsg"},
+            {bn:"Erigeron karvinskianus",cn:"Santa Barbara Daisy", img:"048.jpeg", gimgs: ["048%20(1)","048%20(2)","048%20(3)","048%20(4)","048%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.g542jcrktai"},
+            {bn:"Salvia clevelandii cvs.",cn:"Cleveland Sage / California Blue Sage", img:"049.jpeg", gimgs: ["049%20(1)","049%20(2)","049%20(3)","049%20(4)","049%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.ysqyjjg23g3f"},
+            {bn:"Westringia fruticosa 'Morning Light'",cn:"Variegated Coast Rosemary / Morning Light Coast Rosemary", img:"050.jpeg", gimgs: ["050%20(1)","050%20(2)","050%20(3)","050%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.fjkuwu58fsc7"}
             ];
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
@@ -115,13 +125,13 @@ class MagicEightBall extends React.Component {
   getrandomplants(col1, col2, col3) {
     let array = []
     if(col1){
-      array.push(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+      array.push(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30)
     }
     if(col2){
-      array.push(21,22,23,24,25,26,27,28,29,30)
+      array.push(31,32,33,34,35,36,37,38,39,40)
     }
     if(col3){
-      array.push(31,32,33,34,35,36,37,38,39,40)
+      array.push(41,42,43,44,45,46,47,48,49,50)
     }
     return shuffle(array);
   }
@@ -259,13 +269,13 @@ class MagicEightBall extends React.Component {
 
             <div className="collection-container">
                 <label htmlFor="collection1">
-                   <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Oldies (1-20) 
+                   <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Oldies (1-30) 
                 </label>
                 <label htmlFor="collection2">
-                   <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> 2 Weeks Ago (21-30) 
+                   <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> 2 Weeks Ago (31-40) 
                 </label>
                 <label htmlFor="collection3">
-                   <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Last Week (31-40) 
+                   <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Last Week (41-50) 
                 </label>
             </div>
             <div>
