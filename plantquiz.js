@@ -49,7 +49,18 @@ const plants =
             {bn:"Pyracantha coccinea 'Kasan'",cn:"Firethorn", img:"047.jpeg", gimgs: ["047%20(1)","047%20(2)","047%20(3)","047%20(4)","047%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.nzeowsxmnqsg"},
             {bn:"Erigeron karvinskianus",cn:"Santa Barbara Daisy", img:"048.jpeg", gimgs: ["048%20(1)","048%20(2)","048%20(3)","048%20(4)","048%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.g542jcrktai"},
             {bn:"Salvia clevelandii cvs.",cn:"Cleveland Sage / California Blue Sage", img:"049.jpeg", gimgs: ["049%20(1)","049%20(2)","049%20(3)","049%20(4)","049%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.ysqyjjg23g3f"},
-            {bn:"Westringia fruticosa 'Morning Light'",cn:"Variegated Coast Rosemary / Morning Light Coast Rosemary", img:"050.jpeg", gimgs: ["050%20(1)","050%20(2)","050%20(3)","050%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.fjkuwu58fsc7"}
+            {bn:"Westringia fruticosa 'Morning Light'",cn:"Variegated Coast Rosemary / Morning Light Coast Rosemary", img:"050.jpeg", gimgs: ["050%20(1)","050%20(2)","050%20(3)","050%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.fjkuwu58fsc7"},
+
+            {bn:"Buxus microphylla japonica cvs.",cn:"Japanese Boxwood", img:"051.jpeg", gimgs: ["051%20(1)","051%20(2)","051%20(3)","051%20(4)","051%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.cy0ks4guqvyv"},
+            {bn:"Cotoneaster dammeri cvs.",cn:"Bearberry Cotoneaster", img:"052.jpeg", gimgs: ["052%20(1)","052%20(2)","052%20(3)","052%20(4)","052%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.wzslwoz6eax7"},
+            {bn:"Leptospermum scoparium cvs.",cn:"New Zealand Tea Tree / Manuk", img:"053.jpeg", gimgs: ["053%20(1)","053%20(2)","053%20(3)","053%20(4)","053%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.qg2hqn6696w9"},
+            {bn:"Hypericum calycinum",cn:"Aarons Beard / Creeping St. Johnswort", img:"054.jpeg", gimgs: ["054%20(1)","054%20(2)","054%20(3)","054%20(4)","054%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.5dd7aspk0s5d"},
+            {bn:"Juniperus horizontalis 'Bar Harbor'",cn:"Bar Harbor Juniper", img:"055.jpeg", gimgs: ["055%20(1)","055%20(2)","055%20(3)","055%20(4)","055%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.satua8gjrgbn"},
+            {bn:"Miscanthus sinensis",cn:"Eulalia / Japanese Silver Grass", img:"056.jpeg", gimgs: ["056%20(1)","056%20(2)","056%20(3)","056%20(4)","056%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.ce5gjo4r2ick"},
+            {bn:"Muhlenbergia rigens",cn:"Deer Grass", img:"057.jpeg", gimgs: ["057%20(1)","057%20(2)","057%20(3)","057%20(4)","057%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.ctgd6u3egem"},
+            {bn:"Podocarpus gracilior",cn:"Fern Pine", img:"058.jpeg", gimgs: ["058%20(1)","058%20(2)","058%20(3)","058%20(4)","058%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.5rtac4pjp5s5"},
+            {bn:"Quercus agrifolia",cn:"Coast Live Oak", img:"059.jpeg", gimgs: ["059%20(1)","059%20(2)","059%20(3)","059%20(4)","059%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.37xcqsq3eyfp"},
+            {bn:"Trachelospermum jasminoides",cn:"Star Jasmine", img:"060.jpeg", gimgs: ["060%20(1)","060%20(2)","060%20(3)","060%20(4)","060%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.3jswnnjf2y7a"}
             ];
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
@@ -128,10 +139,10 @@ class MagicEightBall extends React.Component {
       array.push(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30)
     }
     if(col2){
-      array.push(31,32,33,34,35,36,37,38,39,40)
+      array.push(31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50)
     }
     if(col3){
-      array.push(41,42,43,44,45,46,47,48,49,50)
+      array.push(51,52,53,54,55,56,57,58,59,60)
     }
     return shuffle(array);
   }
@@ -269,13 +280,13 @@ class MagicEightBall extends React.Component {
 
             <div className="collection-container">
                 <label htmlFor="collection1">
-                   <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Oldies (1-30) 
+                   <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Plants 1-30 
                 </label>
                 <label htmlFor="collection2">
-                   <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> 2 Weeks Ago (31-40) 
+                   <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> Plants 31-50
                 </label>
                 <label htmlFor="collection3">
-                   <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Last Week (41-50) 
+                   <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Last Week (51-60) 
                 </label>
             </div>
             <div>
