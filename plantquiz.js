@@ -63,6 +63,8 @@ const plants =
             {bn:"Trachelospermum jasminoides",cn:"Star Jasmine", img:"060.jpeg", gimgs: ["060%20(1)","060%20(2)","060%20(3)","060%20(4)","060%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.3jswnnjf2y7a"}
             ];
 
+const totalPlants = 60;
+
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
      Array(str1.length + 1).fill(null));
@@ -107,7 +109,7 @@ class MagicEightBall extends React.Component {
   constructor(props) {
     super(props);
     //console.log("At top of constructor");
-    this.plantList = this.getrandomplants(true,true,true);
+    this.plantList = this.getrandomplants(1, totalPlants);
     //console.log(this.plantList)
     this.state = {
       userInput: '',
@@ -116,33 +118,26 @@ class MagicEightBall extends React.Component {
       currentPlant: plants[this.plantList[0]-1].cn,
       correctAnswer: plants[this.plantList[0]-1].bn,
       response: "",
-      collection1: true,
-      collection2: true,
-      collection3: true,
       hints: true,
+      minPlant: 1,
+      maxPlant: totalPlants,
       streak: 0
     }
+    this.slideleft = this.slideleft.bind(this);
+    this.blank = this.blank.bind(this);
+    this.slideright = this.slideright.bind(this);
     this.guess = this.guess.bind(this);
     this.newplant = this.newplant.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleHints = this.handleHints.bind(this);
-        this.handleBox1 = this.handleBox1.bind(this);
-            this.handleBox2 = this.handleBox2.bind(this);
-                this.handleBox3 = this.handleBox3.bind(this);
     this.handleKeypress = this.handleKeypress.bind(this);
     //console.log("Made it to bottom of constructor");
   }
 
-  getrandomplants(col1, col2, col3) {
+  getrandomplants(firstplant, lastplant) {
     let array = []
-    if(col1){
-      array.push(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30)
-    }
-    if(col2){
-      array.push(31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50)
-    }
-    if(col3){
-      array.push(51,52,53,54,55,56,57,58,59,60)
+    for (let i = firstplant; i <= lastplant; i++) {
+      array.push(i)
     }
     return shuffle(array);
   }
@@ -170,6 +165,57 @@ class MagicEightBall extends React.Component {
       }
     }
   }
+
+  slideleft(event) {
+    //console.log("Slide left");
+    if(isNaN(parseInt(event.target.value))) return;
+    let newmin = 0;
+    if(event.target.value >= this.state.maxPlant) { newmin = this.state.maxPlant - 9; if(newmin < 1) newmin = 1;}
+    else if(event.target.value < 1){ newmin = 1; }
+    else{
+      newmin = parseInt(event.target.value);
+    }
+    if(newmin == this.state.minPlant) return;
+    let newplantlist = this.getrandomplants(newmin, this.state.maxPlant);
+        console.log(newplantlist);
+    this.setState({
+      userInput: '',
+      plantDex: 0,
+      plantList: newplantlist,
+      currentPlant: plants[newplantlist[0]-1].cn,
+      correctAnswer: plants[newplantlist[0]-1].bn,
+      response: "",
+      minPlant: newmin
+    });
+
+  }
+
+  slideright(event) {
+    //console.log("Slide right");
+    if(isNaN(parseInt(event.target.value))) return;
+    let newmax = 0;
+    if(event.target.value <= this.state.minPlant) { newmax = this.state.minPlant + 9; if(newmax > totalPlants) newmax = totalPlants; }
+    else if(event.target.value > totalPlants){ newmax = totalPlants; }
+    else{
+      newmax = parseInt(event.target.value);
+    }
+
+    if(newmax == this.state.maxPlant) return;
+    let newplantlist = this.getrandomplants(this.state.minPlant, newmax);
+
+            console.log(newplantlist);
+    this.setState({
+      userInput: '',
+      plantDex: 0,
+      plantList: newplantlist,
+      currentPlant: plants[newplantlist[0]-1].cn,
+      correctAnswer: plants[newplantlist[0]-1].bn,
+      response: "",
+      maxPlant: newmax
+    });
+  }
+
+  blank(event){}
   
   handleChange(event) {
     //console.log("In handle change");
@@ -184,47 +230,6 @@ class MagicEightBall extends React.Component {
     }); 
   }
 
-  handleBox1(event) {
-    if(!this.state.collection2 && !this.state.collection3) return;
-    let newplantlist = this.getrandomplants(!this.state.collection1,this.state.collection2,this.state.collection3);
-    this.setState({
-      userInput: '',
-      plantDex: 0,
-      plantList: newplantlist,
-      currentPlant: plants[newplantlist[0]-1].cn,
-      correctAnswer: plants[newplantlist[0]-1].bn,
-      response: "",
-      collection1: !this.state.collection1
-    });
-  }
-
-  handleBox2(event) {
-    if(!this.state.collection1 && !this.state.collection3) return;
-    let newplantlist = this.getrandomplants(this.state.collection1,!this.state.collection2,this.state.collection3);
-    this.setState({
-      userInput: '',
-      plantDex: 0,
-      plantList: newplantlist,
-      currentPlant: plants[newplantlist[0]-1].cn,
-      correctAnswer: plants[newplantlist[0]-1].bn,
-      response: "",
-      collection2: !this.state.collection2
-    });
-  }
-
-  handleBox3(event) {
-    if(!this.state.collection1 && !this.state.collection2) return;
-    let newplantlist = this.getrandomplants(this.state.collection1,this.state.collection2,!this.state.collection3);
-    this.setState({
-      userInput: '',
-      plantDex: 0,
-      plantList: newplantlist,
-      currentPlant: plants[newplantlist[0]-1].cn,
-      correctAnswer: plants[newplantlist[0]-1].bn,
-      response: "",
-      collection3: !this.state.collection3
-    });
-  }
 
   handleKeypress(event){
     if (event.key === "Enter" && this.state.response === "You're correct! Press ENTER or 'Next Plant'!") {
@@ -246,7 +251,7 @@ class MagicEightBall extends React.Component {
         <div className="question-container">
           <p className="prompt-label">What is the botanical name for this plant?</p>
           { (this.state.hints) ?
-              <p className="prompt-label">Hint: its common name is {this.state.currentPlant}.</p>
+              <p className="prompt-label">Hint: {this.state.currentPlant}.</p>
               :
               <p className="prompt-label"> ... </p>
           }
@@ -277,22 +282,18 @@ class MagicEightBall extends React.Component {
                   }
                 </div>
             </div>
-
+            <div><p className="streak-label"> Select Plant Range to Quiz:</p></div>
             <div className="collection-container">
-                <label htmlFor="collection1">
-                   <input className="checkbox" type="checkbox" id="collection1" name="col1" checked={this.state.collection1} onChange={this.handleBox1}/> Plants 1-30 
-                </label>
-                <label htmlFor="collection2">
-                   <input className="checkbox" type="checkbox" id="collection2" name="col2" checked={this.state.collection2} onChange={this.handleBox2}/> Plants 31-50
-                </label>
-                <label htmlFor="collection3">
-                   <input className="checkbox" type="checkbox" id="collection3" name="col3" checked={this.state.collection3} onChange={this.handleBox3}/> Last Week (51-60) 
-                </label>
+
+  <label htmlFor="leftnum">
+      Oldest Plant: #<b>{this.state.minPlant}</b> <input id="leftnum" type="range" value={this.state.minPlant} max={totalPlants-9} min="1" step="10" onChange={(event)=>this.slideleft(event)} onInput={(event)=>this.slideleft(event)}/> 
+  </label>
+  <label htmlFor="rightnum">
+     Newest Plant: #<b>{this.state.maxPlant}</b> <input id="rightnum" type="range" value={this.state.maxPlant} max={totalPlants} min="10" step="10" onChange={(event)=>this.slideright(event)} onInput={(event)=>this.slideright(event)}/>
+  </label>
             </div>
-            <div>
-                <label htmlFor="hints">
-                   <input className="checkbox" type="checkbox" id="hints" name="hints" checked={this.state.hints} onChange={this.handleHints}/> Show Common Name 
-                </label>
+            <div><p className="streak-label">Show Common Name:</p>
+                <input className="checkbox" type="checkbox" id="hints" name="hints" checked={this.state.hints} onChange={this.handleHints}/> 
             </div>
         </div>
         </div>
