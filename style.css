@@ -118,8 +118,8 @@ button{
 }
 
 .checkbox, label{
-  padding: 0px 0px;
-  margin: 0px 0;
+  padding: 3px 3px;
+  margin: 3px 3;
   color: white;
   border: none;
   border-radius: 3px;
@@ -193,3 +193,41 @@ button:hover{
     transform: scale(0.9);
   }
 }
+
+  input[type=number]{
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  border: 3px;
+  }
+
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+    display: block;
+    width: 10px;
+    text-align: center;
+    position: relative;
+    background: transparent;
+  }
+  input[type=number]::-webkit-inner-spin-button::before,
+  input[type=number]::-webkit-inner-spin-button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #777;
+  }
+  input[type=number]::-webkit-inner-spin-button::before {
+    top: 7px;
+  }
+  input[type=number]::-webkit-inner-spin-button::after {
+    bottom: 7px;
+    transform: rotate(180deg);
+  }
