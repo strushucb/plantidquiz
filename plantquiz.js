@@ -286,10 +286,10 @@ class MagicEightBall extends React.Component {
             <div className="collection-container">
 
   <label htmlFor="leftnum">
-      Oldest Plant: #<b>{this.state.minPlant}</b> <input id="leftnum" type="range" value={this.state.minPlant} max={totalPlants-9} min="1" step="10" onChange={(event)=>this.slideleft(event)} onInput={(event)=>this.slideleft(event)}/> 
+      Oldest Plant: #<b>{this.state.minPlant}</b> <input className="leftnum" id="leftnum" type="range" value={this.state.minPlant} max={totalPlants-9} min="1" step="10" onChange={(event)=>this.slideleft(event)} onInput={(event)=>this.slideleft(event)}/> 
   </label>
   <label htmlFor="rightnum">
-     Newest Plant: #<b>{this.state.maxPlant}</b> <input id="rightnum" type="range" value={this.state.maxPlant} max={totalPlants} min="10" step="10" onChange={(event)=>this.slideright(event)} onInput={(event)=>this.slideright(event)}/>
+     Newest Plant: #<b>{this.state.maxPlant}</b> <input className="rightnum" id="rightnum" type="range" value={this.state.maxPlant} max={totalPlants} min="10" step="10" onChange={(event)=>this.slideright(event)} onInput={(event)=>this.slideright(event)}/>
   </label>
             </div>
             <div><p className="streak-label">Show Common Name:</p>
