@@ -30,26 +30,6 @@ input {
   border: 0;
 }
 
-.leftnum {
-  width: 200px;
-  height: 30px;
-  text-align: center;
-  padding: 0px 0px;
-  margin: 5px 20px;
-  border: 3px;
-  color: #DDDD00;
-}
-
-.rightnum {
-  width: 200px;
-  height: 30px;
-  text-align: center;
-  padding: 10px 20px;
-  margin: 5px 0px;
-  border: 3px;
-  color: #DDDD00;
-}
-
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   input {
     font-size : 16px;
@@ -129,17 +109,17 @@ button{
   width: 500px;
   margin: 0px;
   text-align: left;
-  vertical-align: center;
+  vertical-align: left;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-content: left;
   align-items: center;
 }
 
 .checkbox, label{
   padding: 0px 0px;
-  margin: 0px 30px;
+  margin: 0px 0;
   color: white;
   border: none;
   border-radius: 3px;
