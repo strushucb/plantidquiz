@@ -10,6 +10,7 @@ const plants =
             {bn: "Morus alba 'Fruitless'", cn: "Fruitless Mulberry", img:"008.jpeg", gimgs: ["008a","008b","008c","008d","008e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.c6l2uivy50cx"},  
             {bn: "Pistacia chinensis", cn: "Chinese Pistache", img:"009.jpeg", gimgs: ["009%20(1)","009%20(2)","009%20(3)","009%20(4)","009%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.6rqjrvoonbex"},  
             {bn: "Pyrus calleryana cvs.", cn: "Flowering Pear / Callery Pear", img:"010.jpeg", gimgs: ["010a","010b","010c","010d","010e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-1#h.o0p19z64p8wd"},  
+
             {bn: "Aesculus x carnea", cn: "Red Horsechestnut", img:"011.jpeg", gimgs: ["011a","011b","011c","011d","011e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.5epmd9704uhd"},  
             {bn: "Betula pendula", cn: "European White Birch", img:"012.jpeg", gimgs: ["012a","012b","012c","012d","012e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.eax22uexpzxh"},  
             {bn: "Gleditsia triacanthos 'Sunburst'", cn: "Sunburst Honey Locust", img:"013.jpeg", gimgs: ["013a","013b","013c","013d","013e"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.pdiulmykq1gc"},  
@@ -20,6 +21,7 @@ const plants =
             {bn:"Quercus douglasii", cn:"Blue Oak", img:"018.jpeg", gimgs: ["018%20(1)","018%20(2)","018%20(3)","018%20(4)","018%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.4wl8r79wdl10"},  
             {bn:"Quercus palustris", cn:"Pin Oak / Swamp Oak", img:"019.jpeg", gimgs: ["019%20(1)","019%20(2)","019%20(3)","019%20(4)","019%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.1lssoc7az6a"},  
             {bn:"Ulmus parvifolia", cn:"Chinese Elm", img:"020.jpeg", gimgs: ["020%20(1)","020%20(2)","020%20(3)","020%20(4)","020%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-2#h.b3b03o4kosnq"},  
+
             {bn:"Agapanthus praecox orientalis cvs.",cn:"Lily of the Nile", img:"021.jpeg", gimgs: ["021%20(1)","021%20(2)","021%20(3)","021%20(4)","021%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.dmq7qec9ypy0"},  
             {bn:"Dodonaea viscosa 'Purpurea'",cn:"Purple Hopseed Bush", img:"022.jpeg", gimgs: ["022%20(1)","022%20(2)","022%20(3)","022%20(4)","022%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.vjubqqhqumqa"},  
             {bn:"Eucalyptus sideroxylon",cn:"Red Iron Bark Eucalyptus", img:"023.jpeg", gimgs: ["023%20(1)","023%20(2)","023%20(3)","023%20(4)","023%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.u3cr4u4z2xng"},  
@@ -30,6 +32,7 @@ const plants =
             {bn:"Rhus lancea",cn:"African Sumac", img:"028.jpeg", gimgs: ["028%20(1)","028%20(2)","028%20(3)","028%20(4)","028%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.q3n96j6u5mw"},  
             {bn:"Rosa hybrids 'White Flower Carpet'",cn:"White Carpet Rose", img:"029.jpeg", gimgs: ["029%20(1)","029%20(2)","029%20(3)","029%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.6a0psynfptee"},  
             {bn:"Salvia leucantha cvs.",cn:"Mexican Bush Sage / Velvet Sage", img:"030.jpeg", gimgs: ["030%20(1)","030%20(2)","030%20(3)","030%20(4)","030%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-3#h.833i6i3n4e5g"},  
+
             {bn:"Abelia x grandiflora cvs.",cn:"Glossy Abelia", img:"031.jpeg", gimgs: ["031b"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.oog0h9wtevv9"},  
             {bn:"Dietes bi-color",cn:"Yellow Fortnight Lily", img:"032.jpeg", gimgs: ["032%20(1)","032%20(2)","032%20(3)","032%20(4)","032%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.7i6n7jcsnjoj"},  
             {bn:"Dietes iridioides",cn:"Fortnight Lily", img:"033.jpeg", gimgs: ["033%20(1)","033%20(2)","033%20(3)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.7xm6vldiaane"},  
@@ -40,6 +43,7 @@ const plants =
             {bn:"Myoporum parvifolium cvs.",cn:"Prostrate Myoporum", img:"038.jpeg", gimgs: ["038b"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.hkmjkuh66zc5"},  
             {bn:"Nandina domestica cvs.",cn:"Heavenly Bamboo", img:"039.jpeg", gimgs: ["039%20(1)","039%20(2)","039%20(3)","039%20(4)","039%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.bcb49h77k9sa"},  
             {bn:"Olea europaea cvs.",cn:"Olive", img:"040.jpeg", gimgs: ["040%20(1)","040%20(2)","040%20(3)","040%20(4)","040%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-4#h.dvxkfkypqjse"},
+
             {bn:"Achillea millefolium cvs.",cn:"Yarrow", img:"041.jpeg", gimgs: ["041%20(1)","041%20(2)","041%20(3)","041%20(4)","041%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.rqltzfhxun58"},
             {bn:"Anemone x hybrida",cn:"Japanese Anemone", img:"042.jpeg", gimgs: ["042%20(1)","042%20(2)","042%20(3)","042%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.asy4i8vqvv4j"},
             {bn:"Chondropetalum elephantium",cn:"Cape Rush", img:"043.jpeg", gimgs: ["043%20(1)","043%20(2)","043%20(3)","043%20(4)","043%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.aa5gkwl0wf34"},
@@ -60,10 +64,21 @@ const plants =
             {bn:"Muhlenbergia rigens",cn:"Deer Grass", img:"057.jpeg", gimgs: ["057%20(1)","057%20(2)","057%20(3)","057%20(4)","057%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.ctgd6u3egem"},
             {bn:"Podocarpus gracilior",cn:"Fern Pine", img:"058.jpeg", gimgs: ["058%20(1)","058%20(2)","058%20(3)","058%20(4)","058%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.5rtac4pjp5s5"},
             {bn:"Quercus agrifolia",cn:"Coast Live Oak", img:"059.jpeg", gimgs: ["059%20(1)","059%20(2)","059%20(3)","059%20(4)","059%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.37xcqsq3eyfp"},
-            {bn:"Trachelospermum jasminoides",cn:"Star Jasmine", img:"060.jpeg", gimgs: ["060%20(1)","060%20(2)","060%20(3)","060%20(4)","060%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.3jswnnjf2y7a"}
+            {bn:"Trachelospermum jasminoides",cn:"Star Jasmine", img:"060.jpeg", gimgs: ["060%20(1)","060%20(2)","060%20(3)","060%20(4)","060%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.3jswnnjf2y7a"},
+
+            {bn:"Arctostaphylos 'Emerald Carpet'",cn:"Emerald Carpet Manzanita", img:"061.jpeg", gimgs: ["061%20(1)","061%20(2)","061%20(3)","061%20(4)","061%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.uawfpiz5wtcb"},
+            {bn:"Berberis thunbergii atropurpurea cvs.",cn:"Red Lead Japanese Barberry", img:"062.jpeg", gimgs: ["062%20(1)","062%20(2)","062%20(3)","062%20(4)","062%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.snt1zz1wwzcw"},
+            {bn:"Callistemon viminalis 'Little John'",cn:"Little John Bottlebrush", img:"063.jpeg", gimgs: ["063%20(1)","063%20(2)","063%20(3)","063%20(4)","063%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.h8rg95omtvna"},
+            {bn:"Coleonema pulchellum 'Sunset Gold'",cn:"Golden Breath of Heaven", img:"064.jpeg", gimgs: ["064%20(1)","064%20(2)","064%20(3)","064%20(4)","064%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.grc4xvxa8mug"},
+            {bn:"Hemerocallis hybrids",cn:"Daylily", img:"065.jpeg", gimgs: ["065%20(1)","065%20(2)","065%20(3)","065%20(4)","065%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.5e1fk7qr03pp"},
+            {bn:"Juniperus chinensis 'Blue Point'",cn:"Blue Point Juniper", img:"066.jpeg", gimgs: ["066%20(1)","066%20(2)","066%20(3)","066%20(4)","066%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.yzxh9om37frx"},
+            {bn:"Pennisetum setaceum 'Rubrum'",cn:"Rubrum Fountain Grass / Red Fountain Grass", img:"067.jpeg", gimgs: ["067%20(1)","067%20(2)","067%20(3)","067%20(4)","067%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.5mqscd306tam"},
+            {bn:"Acer buergerianum",cn:"Trident Maple", img:"068.jpeg", gimgs: ["068%20(1)","068%20(2)","068%20(3)","068%20(4)","068%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.8gfnw7zh3c9f"},
+            {bn:"Punica granatum 'Nana'",cn:"Dwarf Flowering Pomegranate", img:"069.jpeg", gimgs: ["069%20(1)","069%20(2)","069%20(3)","069%20(4)","069%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.2nrome5f6k9l"},
+            {bn:"Rhaphiolepis indica cvs.",cn:"Indian Hawthorne", img:"070.jpeg", gimgs: ["070%20(1)","070%20(2)","070%20(3)","070%20(4)","070%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.ql2d6lig2dxa"}
             ];
 
-const totalPlants = 60;
+const totalPlants = 70;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>

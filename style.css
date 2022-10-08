@@ -38,6 +38,7 @@ input {
     margin: 5px;
   border: 0;
   color: #DDDD00;
+  cursor: pointer;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
