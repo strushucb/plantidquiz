@@ -75,10 +75,21 @@ const plants =
             {bn:"Pennisetum setaceum 'Rubrum'",cn:"Rubrum Fountain Grass / Red Fountain Grass", img:"067.jpeg", gimgs: ["067%20(1)","067%20(2)","067%20(3)","067%20(4)","067%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.5mqscd306tam"},
             {bn:"Acer buergerianum",cn:"Trident Maple", img:"068.jpeg", gimgs: ["068%20(1)","068%20(2)","068%20(3)","068%20(4)","068%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.8gfnw7zh3c9f"},
             {bn:"Punica granatum 'Nana'",cn:"Dwarf Flowering Pomegranate", img:"069.jpeg", gimgs: ["069%20(1)","069%20(2)","069%20(3)","069%20(4)","069%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.2nrome5f6k9l"},
-            {bn:"Rhaphiolepis indica cvs.",cn:"Indian Hawthorne", img:"070.jpeg", gimgs: ["070%20(1)","070%20(2)","070%20(3)","070%20(4)","070%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.ql2d6lig2dxa"}
+            {bn:"Rhaphiolepis indica cvs.",cn:"Indian Hawthorne", img:"070.jpeg", gimgs: ["070%20(1)","070%20(2)","070%20(3)","070%20(4)","070%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.ql2d6lig2dxa"},
+
+            {bn:"Cedrus atlantica 'Glauca'",cn:"Blue Atlas Cedar", img:"071.jpeg", gimgs: ["071b%20(1)","071b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Cedrus deodara",cn:"Deodar Cedar", img:"072.jpeg", gimgs: ["072b%20(1)","072b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Cupressus sempervirens",cn:"Italian Cypress", img:"073.jpeg", gimgs: ["073b%20(1)","073b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Juniperus chinensis 'Spartan'",cn:"Spartan Columnar Juniper", img:"074.jpeg", gimgs: ["074b%20(1)","074b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Juniperus x pfitzeriana 'Aurea'",cn:"Golden Pfitzer Juniper", img:"075.jpeg", gimgs: ["075b%20(1)","075b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Pinus canariensis",cn:"Canary Island Pine", img:"076.jpeg", gimgs: ["076b%20(1)","076b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Pinus pinea",cn:"Italian Stone Pine", img:"077.jpeg", gimgs: ["077b%20(1)","077b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Pinus thunbergii",cn:"Japanese Black Pine", img:"078.jpeg", gimgs: ["078b%20(1)","078b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Sequoia sempervirens cvs.",cn:"Coast Redwood", img:"079.jpeg", gimgs: ["079b%20(1)","079b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Sequoiadendron giganteum",cn:"Giant Sequoia", img:"080.jpeg", gimgs: ["080b%20(1)","080b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"}
             ];
 
-const totalPlants = 70;
+const totalPlants = 80;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
