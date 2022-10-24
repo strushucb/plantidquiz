@@ -86,10 +86,21 @@ const plants =
             {bn:"Pinus pinea",cn:"Italian Stone Pine", img:"077.jpeg", gimgs: ["077b%20(1)","077b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
             {bn:"Pinus thunbergii",cn:"Japanese Black Pine", img:"078.jpeg", gimgs: ["078b%20(1)","078b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
             {bn:"Sequoia sempervirens cvs.",cn:"Coast Redwood", img:"079.jpeg", gimgs: ["079b%20(1)","079b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Sequoiadendron giganteum",cn:"Giant Sequoia", img:"080.jpeg", gimgs: ["080b%20(1)","080b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"}
+            {bn:"Sequoiadendron giganteum",cn:"Giant Sequoia", img:"080.jpeg", gimgs: ["080b%20(1)","080b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+
+            {bn:"Cistus x pulverulentus 'Sunset'",cn:"Sunset Rockrose", img:"081.jpeg", gimgs: ["081b%20(1)","081b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Cotinus coggygria 'Royal Purple'",cn:"Royal Purple Smoke Bush", img:"082.jpeg", gimgs: ["082b%20(1)","082b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Mahonia aquifolium cvs.",cn:"Oregon Grape", img:"083.jpeg", gimgs: ["083b%20(1)","083b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Myrtus communis 'Compacta'",cn:"Dwarf Myrtle", img:"084.jpeg", gimgs: ["084b%20(1)","084b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Santolina chamaecyparissus",cn:"Lavender Cotton", img:"085.jpeg", gimgs: ["085b%20(1)","085b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Frangula californica",cn:"Coffeeberry", img:"086.jpeg", gimgs: ["086b%20(1)","086b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Heuchera maxima",cn:"Coral Bells / Island Alum Root", img:"087.jpeg", gimgs: ["087b%20(1)","087b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Magnolia grandiflora",cn:"Southern Magnolia", img:"088.jpeg", gimgs: ["088b%20(1)","088b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Solanum laxum",cn:"Chinese Wisteria", img:"089.jpeg", gimgs: ["089b%20(1)","089b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Xylosma congestum",cn:"Shiny Xylosma", img:"090.jpeg", gimgs: ["090b%20(1)","090b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"}
             ];
 
-const totalPlants = 80;
+const totalPlants = 90;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
@@ -182,7 +193,7 @@ class MagicEightBall extends React.Component {
 
   guess() {
     //console.log("guess is called with "+this.state.userInput+" as the userInput");
-    if (this.state.userInput !== '') {
+    if (this.state.userInput !== '' && !(this.state.response === "You're correct! Press ENTER or 'Next Plant'!")) {
       let distance = levenshteinDistance(this.state.correctAnswer, this.state.userInput.replace("’","'").replace("‘","'"));
       if (distance == 0){
         this.setState({response: "You're correct! Press ENTER or 'Next Plant'!", streak: this.state.streak + 1});
