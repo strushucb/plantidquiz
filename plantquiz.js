@@ -77,30 +77,41 @@ const plants =
             {bn:"Punica granatum 'Nana'",cn:"Dwarf Flowering Pomegranate", img:"069.jpeg", gimgs: ["069%20(1)","069%20(2)","069%20(3)","069%20(4)","069%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.2nrome5f6k9l"},
             {bn:"Rhaphiolepis indica cvs.",cn:"Indian Hawthorne", img:"070.jpeg", gimgs: ["070%20(1)","070%20(2)","070%20(3)","070%20(4)","070%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-7#h.ql2d6lig2dxa"},
 
-            {bn:"Cedrus atlantica 'Glauca'",cn:"Blue Atlas Cedar", img:"071.jpeg", gimgs: ["071b%20(1)","071b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Cedrus deodara",cn:"Deodar Cedar", img:"072.jpeg", gimgs: ["072b%20(1)","072b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Cupressus sempervirens",cn:"Italian Cypress", img:"073.jpeg", gimgs: ["073b%20(1)","073b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Juniperus chinensis 'Spartan'",cn:"Spartan Columnar Juniper", img:"074.jpeg", gimgs: ["074b%20(1)","074b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Juniperus x pfitzeriana 'Aurea'",cn:"Golden Pfitzer Juniper", img:"075.jpeg", gimgs: ["075b%20(1)","075b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Pinus canariensis",cn:"Canary Island Pine", img:"076.jpeg", gimgs: ["076b%20(1)","076b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Pinus pinea",cn:"Italian Stone Pine", img:"077.jpeg", gimgs: ["077b%20(1)","077b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Pinus thunbergii",cn:"Japanese Black Pine", img:"078.jpeg", gimgs: ["078b%20(1)","078b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Sequoia sempervirens cvs.",cn:"Coast Redwood", img:"079.jpeg", gimgs: ["079b%20(1)","079b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Sequoiadendron giganteum",cn:"Giant Sequoia", img:"080.jpeg", gimgs: ["080b%20(1)","080b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
+            {bn:"Cedrus atlantica 'Glauca'",cn:"Blue Atlas Cedar", img:"071.jpeg", gimgs: ["071b%20(1)","071b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Cedrus deodara",cn:"Deodar Cedar", img:"072.jpeg", gimgs: ["072b%20(1)","072b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Cupressus sempervirens",cn:"Italian Cypress", img:"073.jpeg", gimgs: ["073b%20(1)","073b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Juniperus chinensis 'Spartan'",cn:"Spartan Columnar Juniper", img:"074.jpeg", gimgs: ["074b%20(1)","074b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Juniperus x pfitzeriana 'Aurea'",cn:"Golden Pfitzer Juniper", img:"075.jpeg", gimgs: ["075b%20(1)","075b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Pinus canariensis",cn:"Canary Island Pine", img:"076.jpeg", gimgs: ["076b%20(1)","076b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Pinus pinea",cn:"Italian Stone Pine", img:"077.jpeg", gimgs: ["077b%20(1)","077b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Pinus thunbergii",cn:"Japanese Black Pine", img:"078.jpeg", gimgs: ["078b%20(1)","078b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Sequoia sempervirens cvs.",cn:"Coast Redwood", img:"079.jpeg", gimgs: ["079b%20(1)","079b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
+            {bn:"Sequoiadendron giganteum",cn:"Giant Sequoia", img:"080.jpeg", gimgs: ["080b%20(1)","080b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d766231ce"},
 
-            {bn:"Cistus x pulverulentus 'Sunset'",cn:"Sunset Rockrose", img:"081.jpeg", gimgs: ["081b%20(1)","081b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Cotinus coggygria 'Royal Purple'",cn:"Royal Purple Smoke Bush", img:"082.jpeg", gimgs: ["082b%20(1)","082b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Mahonia aquifolium cvs.",cn:"Oregon Grape", img:"083.jpeg", gimgs: ["083b%20(1)","083b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Myrtus communis 'Compacta'",cn:"Dwarf Myrtle", img:"084.jpeg", gimgs: ["084b%20(1)","084b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Santolina chamaecyparissus",cn:"Lavender Cotton", img:"085.jpeg", gimgs: ["085b%20(1)","085b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Frangula californica",cn:"Coffeeberry", img:"086.jpeg", gimgs: ["086b%20(1)","086b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Heuchera maxima",cn:"Coral Bells / Island Alum Root", img:"087.jpeg", gimgs: ["087b%20(1)","087b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Magnolia grandiflora",cn:"Southern Magnolia", img:"088.jpeg", gimgs: ["088b%20(1)","088b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Solanum laxum",cn:"Chinese Wisteria", img:"089.jpeg", gimgs: ["089b%20(1)","089b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"},
-            {bn:"Xylosma congestum",cn:"Shiny Xylosma", img:"090.jpeg", gimgs: ["090b%20(1)","090b%20(2)"], collectionurl: "https://sites.google.com/view/horticulture006/"}
+            {bn:"Cistus x pulverulentus 'Sunset'",cn:"Sunset Rockrose", img:"081.jpeg", gimgs: ["081b%20(1)","081b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Cotinus coggygria 'Royal Purple'",cn:"Royal Purple Smoke Bush", img:"082.jpeg", gimgs: ["082b%20(1)","082b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Mahonia aquifolium cvs.",cn:"Oregon Grape", img:"083.jpeg", gimgs: ["083b%20(1)","083b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Myrtus communis 'Compacta'",cn:"Dwarf Myrtle", img:"084.jpeg", gimgs: ["084b%20(1)","084b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Santolina chamaecyparissus",cn:"Lavender Cotton", img:"085.jpeg", gimgs: ["085b%20(1)","085b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Frangula californica",cn:"Coffeeberry", img:"086.jpeg", gimgs: ["086b%20(1)","086b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Heuchera maxima",cn:"Coral Bells / Island Alum Root", img:"087.jpeg", gimgs: ["087b%20(1)","087b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Magnolia grandiflora",cn:"Southern Magnolia", img:"088.jpeg", gimgs: ["088b%20(1)","088b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Solanum laxum",cn:"Chinese Wisteria", img:"089.jpeg", gimgs: ["089b%20(1)","089b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Xylosma congestum",cn:"Shiny Xylosma", img:"090.jpeg", gimgs: ["090b%20(1)","090b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+
+            {bn:"Bergenia crassifolia",cn:"Winter Blooming Bergenia", img:"091.jpeg", gimgs: ["091b%20(1)","091b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Buddleja davidii cvs.",cn:"Butterfly Bush", img:"092.jpeg", gimgs: ["092b%20(1)","092b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Escallonia x exoniensis",cn:"Escallonia", img:"093.jpeg", gimgs: ["093b%20(1)","093b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Feijoa sellowiana",cn:"Pineapple Guava", img:"094.jpeg", gimgs: ["094b%20(1)","094b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Nerium oleander cvs.",cn:"Oleander", img:"095.jpeg", gimgs: ["095b%20(1)","095b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Pittosporum tobira 'Variegatum'",cn:"Variegated Tobira / Variegated Japanese Mock Orange", img:"096.jpeg", gimgs: ["096b%20(1)","096b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Quercus suber",cn:"Cork Oak", img:"097.jpeg", gimgs: ["097b%20(1)","097b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Rosmarinus officinalis cvs.",cn:"Rosemary", img:"098.jpeg", gimgs: ["098b%20(1)","098b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Schinus molle",cn:"California Pepper Tree", img:"099.jpeg", gimgs: ["099b%20(1)","099b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+            {bn:"Teucrium x lucidrys",cn:"Wall Germander", img:"100.jpeg", gimgs: ["100b%20(1)","100b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"}
             ];
 
-const totalPlants = 90;
+const totalPlants = 100;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
