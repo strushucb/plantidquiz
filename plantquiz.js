@@ -56,7 +56,7 @@ const plants =
             {bn:"Westringia fruticosa 'Morning Light'",cn:"Variegated Coast Rosemary / Morning Light Coast Rosemary", img:"050.jpeg", gimgs: ["050%20(1)","050%20(2)","050%20(3)","050%20(4)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-5#h.fjkuwu58fsc7"},
 
             {bn:"Buxus microphylla japonica cvs.",cn:"Japanese Boxwood", img:"051.jpeg", gimgs: ["051%20(1)","051%20(2)","051%20(3)","051%20(4)","051%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.cy0ks4guqvyv"},
-            {bn:"Cotoneaster dammeri cvs.",cn:"Bearberry Cotoneaster", img:"052.jpeg", gimgs: ["052%20(1)","052%20(2)","052%20(3)","052%20(4)","052%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.wzslwoz6eax7"},
+            {bn:"Cotoneaster dammeri 'Lowfast'",cn:"Lowfast Bearberry Cotoneaster", img:"052.jpeg", gimgs: ["052%20(1)","052%20(2)","052%20(3)","052%20(4)","052%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.wzslwoz6eax7"},
             {bn:"Leptospermum scoparium cvs.",cn:"New Zealand Tea Tree / Manuk", img:"053.jpeg", gimgs: ["053%20(1)","053%20(2)","053%20(3)","053%20(4)","053%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.qg2hqn6696w9"},
             {bn:"Hypericum calycinum",cn:"Aarons Beard / Creeping St. Johnswort", img:"054.jpeg", gimgs: ["054%20(1)","054%20(2)","054%20(3)","054%20(4)","054%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.5dd7aspk0s5d"},
             {bn:"Juniperus horizontalis 'Bar Harbor'",cn:"Bar Harbor Juniper", img:"055.jpeg", gimgs: ["055%20(1)","055%20(2)","055%20(3)","055%20(4)","055%20(5)"], collectionurl: "https://sites.google.com/view/horticulture006/collection-6#h.satua8gjrgbn"},
@@ -96,7 +96,7 @@ const plants =
             {bn:"Frangula californica",cn:"Coffeeberry", img:"086.jpeg", gimgs: ["086b%20(1)","086b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
             {bn:"Heuchera maxima",cn:"Coral Bells / Island Alum Root", img:"087.jpeg", gimgs: ["087b%20(1)","087b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
             {bn:"Magnolia grandiflora",cn:"Southern Magnolia", img:"088.jpeg", gimgs: ["088b%20(1)","088b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
-            {bn:"Solanum laxum",cn:"Chinese Wisteria", img:"089.jpeg", gimgs: ["089b%20(1)","089b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
+            {bn:"Solanum laxum",cn:"Potato Vine", img:"089.jpeg", gimgs: ["089b%20(1)","089b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
             {bn:"Xylosma congestum",cn:"Shiny Xylosma", img:"090.jpeg", gimgs: ["090b%20(1)","090b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d7cf8be3c"},
 
             {bn:"Bergenia crassifolia",cn:"Winter Blooming Bergenia", img:"091.jpeg", gimgs: ["091b%20(1)","091b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
