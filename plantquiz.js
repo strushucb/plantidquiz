@@ -108,10 +108,21 @@ const plants =
             {bn:"Quercus suber",cn:"Cork Oak", img:"097.jpeg", gimgs: ["097b%20(1)","097b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
             {bn:"Rosmarinus officinalis cvs.",cn:"Rosemary", img:"098.jpeg", gimgs: ["098b%20(1)","098b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
             {bn:"Schinus molle",cn:"California Pepper Tree", img:"099.jpeg", gimgs: ["099b%20(1)","099b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
-            {bn:"Teucrium x lucidrys",cn:"Wall Germander", img:"100.jpeg", gimgs: ["100b%20(1)","100b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"}
+            {bn:"Teucrium x lucidrys",cn:"Wall Germander", img:"100.jpeg", gimgs: ["100b%20(1)","100b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=5ba3d8399faa4"},
+
+            {bn:"Bougainvillea hybrids",cn:"Bougainvillea", img:"101.jpeg", gimgs: ["101b%20(1)","101b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Cuphea ignea",cn:"Cigar Plant", img:"102.jpeg", gimgs: ["102b%20(1)","102b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Equisetum hyemale",cn:"Horsetail", img:"103.jpeg", gimgs: ["103b%20(1)","103b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Euonymus fortunei 'Ivory Jade'",cn:"Ivory Jade Euonymus", img:"104.jpeg", gimgs: ["104b%20(1)","104b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Gaillardia x grandiflora",cn:"Blanket Flower / Indian Blanket", img:"105.jpeg", gimgs: ["105b%20(1)","105b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Geranium x cantabrigiense 'Biokovo'",cn:"Biokovo Geranium", img:"106.jpeg", gimgs: ["106b%20(1)","106b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Lonicera japonica 'Halliana'",cn:"Halliana Japanese Honeysuckle", img:"107.jpeg", gimgs: ["107b%20(1)","107b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Penstemon hybrids",cn:"Border Penstemon / Garden Penstemon", img:"108.jpeg", gimgs: ["108b%20(1)","108b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Salvia greggii cvs.",cn:"Autumn Sage", img:"109.jpeg", gimgs: ["109b%20(1)","109b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
+            {bn:"Tulbaghia violaceae cvs.",cn:"Society Garlic", img:"110.jpeg", gimgs: ["110b%20(1)","110b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"}
             ];
 
-const totalPlants = 100;
+const totalPlants = 110;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
