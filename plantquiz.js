@@ -119,7 +119,7 @@ const plants =
             {bn:"Lonicera japonica 'Halliana'",cn:"Halliana Japanese Honeysuckle", img:"107.jpeg", gimgs: ["107b%20(1)","107b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
             {bn:"Penstemon hybrids",cn:"Border Penstemon / Garden Penstemon", img:"108.jpeg", gimgs: ["108b%20(1)","108b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
             {bn:"Salvia greggii cvs.",cn:"Autumn Sage", img:"109.jpeg", gimgs: ["109b%20(1)","109b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"},
-            {bn:"Tulbaghia violaceae cvs.",cn:"Society Garlic", img:"110.jpeg", gimgs: ["110b%20(1)","110b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"}
+            {bn:"Tulbaghia violacea cvs.",cn:"Society Garlic", img:"110.jpeg", gimgs: ["110b%20(1)","110b%20(2)"], collectionurl: "https://plantmaster.com/presents/plants.php?id=637310f86ccd2"}
             ];
 
 const totalPlants = 110;
