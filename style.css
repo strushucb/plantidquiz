@@ -10,6 +10,11 @@ body{
   align-content: center;
   align-items: flex-start;
 }
+
+.weedbody{
+  background: #111111;
+}
+
 .question-container{
   width: 500px;
   text-align: center;
