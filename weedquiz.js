@@ -104,7 +104,7 @@ class MagicEightBall extends React.Component {
 
   guess() {
     //console.log("guess is called with "+this.state.userInput+" as the userInput");
-    if (this.state.userInput !== '' && !(this.state.response === "You're correct! Press ENTER or 'Next Plant'!")) {
+    if (this.state.userInput !== '' && !(this.state.response === "You're correct! Press ENTER or 'Next Weed'!")) {
       let correct = false;
       let distance = 99999;
       for (let i = 0; i < this.state.correctAnswer.length; i += 1) {
