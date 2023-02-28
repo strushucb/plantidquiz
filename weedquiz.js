@@ -1,6 +1,6 @@
 const plants = 
             [
-            {bn: "Sonchus oleraceus", cn: ["Annual Sow Thistle"], imgs: ["001a","001b","001c","001d","001e", "001f", "001g", "001h", "001i"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/annual_sowthistle.html"},  
+            {bn: "Sonchus oleraceus", cn: ["Annual Sow Thistle","Sow Thistle"], imgs: ["001a","001b","001c","001d","001e", "001f", "001g", "001h", "001i"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/annual_sowthistle.html"},  
             {bn: "Gnaphalium luteo-album", cn: ["Cudweed"], imgs: ["002a","002b","002c","002d","002e", "002f", "002g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/cudweeds.html"},
             {bn: "Cardamine oligosperma", cn: ["Little Bittercress"], imgs: ["003a","003b","003c","003d","003e", "003f", "003g", "003h", "003i", "003j"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/bittercress.html"},  
             {bn: "Picris echioides", cn: ["Bristly Oxtongue"], imgs: ["004a","004b","004c","004d","004e", "004f", "004g", "004h", "004i"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/bristly_oxtongue.html"},  
@@ -9,9 +9,13 @@ const plants =
             {bn: "Malva parviflora", cn: ["Cheeseweed","Little Mallow"], imgs: ["007a","007b","007c","007d","007e", "007f", "007g", "007h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/little_mallow.html"},  
             {bn: "Senecio vulgaris", cn: ["Groundsel","Common Groundsel"], imgs: ["008a","008b","008c","008d","008e", "008f", "008g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/common_groundsel.html"},  
             {bn: "Conyza canadensis", cn: ["Horseweed", "Mare's Tail"], imgs: ["009a","009b","009c","009d","009e", "009f", "009g", "009h", "009i", "009j", "009k"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/horseweed.html"},  
+
+            {bn: "Euphorbia peplus", cn: ["Petty Spurge"], imgs: ["010a","010b","010c","010d","010e", "010f", "010g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/petty_spurge.html"},  
+            {bn: "Erodium moschatum", cn: ["White-Stem Filaree","Filaree","Whitestem Filaree","White Stem Filaree"], imgs: ["011a","011b","011c","011d","011e", "011f", "011g", "011h", "011i", "011j", "011k"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/whitestem_filaree.html"},  
+            {bn: "Avena fatua", cn: ["Wild Oats", "Wild Oat"], imgs: ["012a","012b","012c","012d","012e", "012f", "012g", "012h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/wild_oat.html"}
             ];
 
-const totalPlants = 9;
+const totalPlants = 12;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
