@@ -14,7 +14,7 @@ const plants =
             {bn: "Erodium moschatum", cn: ["White-Stem Filaree","Filaree","Whitestem Filaree","White Stem Filaree"], imgs: ["011a","011b","011c","011d","011e", "011f", "011g", "011h", "011i", "011j", "011k"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/whitestem_filaree.html"},  
             {bn: "Avena fatua", cn: ["Wild Oats", "Wild Oat"], imgs: ["012a","012b","012c","012d","012e", "012f", "012g", "012h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/wild_oat.html"},
 
-            {bn: "Medicago polymorpha", cn: ["California Bur Clover"], imgs: ["013a","013b","013c","013d","013e", "013f", "013g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/california_burclover.html"},  
+            {bn: "Medicago polymorpha", cn: ["California Bur Clover", "California Burclover"], imgs: ["013a","013b","013c","013d","013e", "013f", "013g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/california_burclover.html"},  
             {bn: "Rumex crispus", cn: ["Curly Dock", "Sour Dock"], imgs: ["014a","014b","014c","014d","014e", "014f", "014g", "014h", "014i", "014j"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/curly_dock.html"},  
             {bn: "Geranium dissectum", cn: ["Cutleaf Geranium"], imgs: ["015a","015b","015c","015d","015e", "015f", "015g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/cutleaf_geranium.html"}
             ];
