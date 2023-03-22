@@ -16,10 +16,18 @@ const plants =
 
             {bn: "Medicago polymorpha", cn: ["California Bur Clover", "California Burclover"], imgs: ["013a","013b","013c","013d","013e", "013f", "013g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/california_burclover.html"},  
             {bn: "Rumex crispus", cn: ["Curly Dock", "Sour Dock"], imgs: ["014a","014b","014c","014d","014e", "014f", "014g", "014h", "014i", "014j"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/curly_dock.html"},  
-            {bn: "Geranium dissectum", cn: ["Cutleaf Geranium"], imgs: ["015a","015b","015c","015d","015e", "015f", "015g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/cutleaf_geranium.html"}
+            {bn: "Geranium dissectum", cn: ["Cutleaf Geranium"], imgs: ["015a","015b","015c","015d","015e", "015f", "015g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/cutleaf_geranium.html"},
+
+            {bn: "Cichorium intybus", cn: ["Chicory"], imgs: ["016a","016b","016c","016d","016e", "016f"], collectionurl: "https://wric.ucdavis.edu/information/natural%20areas/wr_C/Cichorium.pdf"},  
+            {bn: "Triticum spp.", cn: ["Volunteer Wheat"], imgs: ["017a","017b","017c","017d","017e", "017f"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/volunteer_wheat.html"},  
+            {bn: "Raphanus sativus", cn: ["Wild Radish"], imgs: ["018a","018b","018c","018d","018e", "018f", "018g", "018h", "018i"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/wild_radish.html"},
+
+            {bn: "Poa annua", cn: ["Annual Bluegrass"], imgs: ["019a","019b","019c","019d","019e", "019f", "019g", "019h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/annual_bluegrass.html"},  
+            {bn: "Lamium aplexicaule", cn: ["Henbit"], imgs: ["020a","020b","020c","020d","020e", "020f", "020g", "020h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/henbit.html"},  
+            {bn: "Vicia americana", cn: ["Purple Vetch"], imgs: ["021a","021b","021c","021d","021e", "021f", "021g","021h","021i"], collectionurl: "https://ucanr.edu/sites/ucceventura/files/43463.pdf"}
             ];
 
-const totalPlants = 15;
+const totalPlants = 21;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
