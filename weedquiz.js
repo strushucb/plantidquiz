@@ -24,10 +24,14 @@ const plants =
 
             {bn: "Poa annua", cn: ["Annual Bluegrass"], imgs: ["019a","019b","019c","019d","019e", "019f", "019g", "019h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/annual_bluegrass.html"},  
             {bn: "Lamium aplexicaule", cn: ["Henbit"], imgs: ["020a","020b","020c","020d","020e", "020f", "020g", "020h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/henbit.html"},  
-            {bn: "Vicia americana", cn: ["Purple Vetch"], imgs: ["021a","021b","021c","021d","021e", "021f", "021g","021h","021i"], collectionurl: "https://ucanr.edu/sites/ucceventura/files/43463.pdf"}
+            {bn: "Vicia americana", cn: ["Purple Vetch"], imgs: ["021a","021b","021c","021d","021e", "021f", "021g","021h","021i"], collectionurl: "https://ucanr.edu/sites/ucceventura/files/43463.pdf"},
+ 
+            {bn: "Oxalis pes-caprae", cn: ["Bermuda Buttercup"], imgs: ["022a","022b","022c","022d","022e", "022f", "022g","022h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/bermuda_buttercup.html"},  
+            {bn: "Foeniculum vulgare", cn: ["Fennel"], imgs: ["023a","023b","023c","023d","023e", "023f", "023g","023h","023i"], collectionurl: "https://wric.ucdavis.edu/information/natural%20areas/wr_F/Foeniculum.pdf"},  
+            {bn: "Bromus ramosus", cn: ["Hairy Brome"], imgs: ["024a","024b","024c","024d","024e", "024f", "024g","024h"], collectionurl: "https://en.wikipedia.org/wiki/Bromus_ramosus"}
             ];
 
-const totalPlants = 21;
+const totalPlants = 24;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
