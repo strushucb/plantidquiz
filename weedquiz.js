@@ -28,10 +28,15 @@ const plants =
  
             {bn: "Oxalis pes-caprae", cn: ["Bermuda Buttercup"], imgs: ["022a","022b","022c","022d","022e", "022f", "022g","022h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/bermuda_buttercup.html"},  
             {bn: "Foeniculum vulgare", cn: ["Fennel"], imgs: ["023a","023b","023c","023d","023e", "023f", "023g","023h","023i"], collectionurl: "https://wric.ucdavis.edu/information/natural%20areas/wr_F/Foeniculum.pdf"},  
-            {bn: "Bromus ramosus", cn: ["Hairy Brome"], imgs: ["024a","024b","024c","024d","024e", "024f", "024g","024h"], collectionurl: "https://en.wikipedia.org/wiki/Bromus_ramosus"}
+            {bn: "Bromus ramosus", cn: ["Hairy Brome"], imgs: ["024a","024b","024c","024d","024e", "024f", "024g","024h"], collectionurl: "https://en.wikipedia.org/wiki/Bromus_ramosus"},
+  
+            {bn: "Carduus pycnocephalus", cn: ["Italian Thistle"], imgs: ["025a","025b","025c","025d","025e", "025f", "025g","025h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/italian_thistle.html"},  
+            {bn: "Epilobium paniculatum", cn: ["Panicle Willow", "Panicle Willowherb"], imgs: ["026a","026b","026c","026d","026e", "026f", "026g","026h"], collectionurl: "https://ucanr.edu/sites/ucceventura/files/43362.pdf"},  
+            {bn: "Trifolium repens", cn: ["White Clover"], imgs: ["027a","027b","027c","027d","027e", "027f"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/white_clover.html"}
+  
             ];
 
-const totalPlants = 24;
+const totalPlants = 27;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
