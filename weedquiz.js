@@ -32,11 +32,23 @@ const plants =
   
             {bn: "Carduus pycnocephalus", cn: ["Italian Thistle"], imgs: ["025a","025b","025c","025d","025e", "025f", "025g","025h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/italian_thistle.html"},  
             {bn: "Epilobium paniculatum", cn: ["Panicle Willow", "Panicle Willowherb"], imgs: ["026a","026b","026c","026d","026e", "026f", "026g","026h"], collectionurl: "https://ucanr.edu/sites/ucceventura/files/43362.pdf"},  
-            {bn: "Trifolium repens", cn: ["White Clover"], imgs: ["027a","027b","027c","027d","027e", "027f"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/white_clover.html"}
-  
+            {bn: "Trifolium repens", cn: ["White Clover"], imgs: ["027a","027b","027c","027d","027e", "027f"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/white_clover.html"},
+
+            {bn: "Galium aparine", cn: ["Catchweed","Bedstraw","Cleaver","Cleavers","Sticky Willy"], imgs: ["028a","028b","028c","028d","028e", "028f", "028g","028h","028i"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/catchweed_bedstraw.html"},  
+            {bn: "Brassica rapa", cn: ["Mustard","California Mustard"], imgs: ["029a","029b","029c","029d","029e", "029f", "029g","029h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/mustards.html"},  
+            {bn: "Anagallis arvensis", cn: ["Scarlet Pimpernel"], imgs: ["030a","030b","030c","030d","030e", "030f","030g","030h", "030i"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/scarlet_pimpernel.html"},
+
+            {bn: "Convolvulus arvensis", cn: ["Bindweed","Field Bindweed"], imgs: ["031a","031b","031c","031d","031e", "031f", "031g"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/field_bindweed.html"},  
+            {bn: "Lolium multiflorum", cn: ["Italian Ryegrass","Annual Ryegrass", "Italian Rye"], imgs: ["032a","032b","032c","032d","032e", "032f", "032g","032h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/italian_ryegrass.html"},  
+            {bn: "Toxicodendron diversilobum", cn: ["Poison Oak"], imgs: ["033a","033b","033c","033d","033e", "033f","033g", "033h"], collectionurl: "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7431.html"},
+
+
+            {bn: "Rubus spp.", cn: ["California Blackberry","Wild Blackberry","Blackberry","Wild Blackberries"], imgs: ["034a","034b","034c","034d","034e", "034f"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/wild_blackberry.html"},  
+            {bn: "Melilotus officinalis", cn: ["Yellow Sweet Clover", "Yellow Sweetclover"], imgs: ["035a","035b","035c","035d","035e", "035f", "035g","035h"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/yellow_sweetclover.html"},  
+            {bn: "Cyperus esculentus", cn: ["Yellow Nutsedge"], imgs: ["036a","036b","036c","036d","036e", "036f"], collectionurl: "https://ipm.ucanr.edu/PMG/WEEDS/yellow_nutsedge.html"}  
             ];
 
-const totalPlants = 27;
+const totalPlants = 36;
 
 const levenshteinDistance = (str1 = '', str2 = '') => {
      const track = Array(str2.length + 1).fill(null).map(() =>
